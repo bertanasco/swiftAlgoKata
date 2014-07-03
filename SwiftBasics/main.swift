@@ -15,6 +15,7 @@ println("Hello, World!");
 /*
  Comment
 */
+
 var explicitInteger = 1;
 var implicitInteger: Int = 2;
 let constantFromVariable = explicitInteger;
@@ -39,4 +40,57 @@ var priorities = ["workout", "draw", "code", "eat", "love"];
 
 println( priorities )
 
+println( "test \(priorities[0])")
+
+
+//for-in  works like java's enhanced for-loop
+let individualScores = [75, 22, 23, 29, 30, 100];
+
+var teamScore = 0;
+
+for score in individualScores{
+    if(score > 50) {
+        teamScore += 1;
+    }
+    else {
+        println("test print \(score)");
+    }
+    
+}
+println("teamscore \(teamScore)");
+
+//optional
+var testOptional = "asfsadf";
+testOptional == "asdf";
+var withoutOptional:String?;
+withoutOptional == "test";
+//withoutOptional = "asdf";
+var optionalString: String? = "Hello";
+
+optionalString == nil;
+println(optionalString);
+
+var optionalName :String?;
+//optionalName == nil;
+var greeting = "kumusta!"
+if let name = optionalName {
+    greeting = "hello , \(name)"
+}
+
+let x = optionalName;
+if x {
+    
+}
+/* whyyy???
+if (let y = optionalName) {
+    
+}*/
+
+if let y = optionalName {
+    println("optionalName is not null \(y)")
+} else {
+    println("optionalName is null");
+}
+
+println( " name  \(optionalName) ")
 
